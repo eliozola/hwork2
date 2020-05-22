@@ -1,0 +1,39 @@
+/*smartphone*/
+@media only (max-width: 576px){
+    body.container{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-areas: 
+        "brand brand"
+        "nav tools"
+        "ha ha"
+        "af af"
+        "ad ad"
+        "al al"
+        "footer footer";
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr 3fr 1fr;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    height: 100%;
+    margin: 0;
+    }
+}
+
+/*only screen and (max-width: 576px){
+    body.main-container{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: 
+    "b b"
+    "n t"
+    "ha ha"
+    "af af"
+    "ad ad"
+    "al al"
+    "fo fo";
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr 3fr 1fr;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    height: 100%;
+    margin: 0;
+    }
