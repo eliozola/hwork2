@@ -7,10 +7,11 @@ header {
 
 .container {
     display: grid;
-    /*grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;*/
+    height: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     background-color: linen;
-    grid-gap: 10px;
+    grid-gap: 40%;
     align-items: center;
     grid-template-areas:
         "br br"
