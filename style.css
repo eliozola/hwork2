@@ -51,14 +51,15 @@ header {
 
 .nav li{
     padding: 5px;
-    display: inline;
+    display: inline-block;
 }
 .nav ul {
-    display: inline;
+    list-style: none;
+    text-align: center;
 }
 
 .nav-links a{
-    display: inline;
+    display: inline-block;
     color:  rgb(86, 91, 97);
     text-align: match-parent;
     padding: 10px 10px;
