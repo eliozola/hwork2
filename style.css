@@ -9,7 +9,7 @@ header {
         grid-area: br;
         justify-self: left;
     }
-.nav{
+.nav {
     grid-area: nav;
     text-align: center;
     padding: 10px;
@@ -37,7 +37,7 @@ header {
  
 
 
-.top-nav li{
+.nav li{
     padding: 5px;
     display: inline;
 }
@@ -55,7 +55,7 @@ header {
     background: yellowgreen ;
     border-radius: 10%;
 }
-.tools {
+.ts {
     height: 6rem;
     width: 6rem;
     margin: 0.5rem; 
