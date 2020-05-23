@@ -4,24 +4,6 @@ body {
 header {
     font-size: 16px;
 }
-.br {
-    
-        grid-area: br;
-        justify-self: left;
-    }
-.nav {
-    grid-area: nav;
-    text-align: center;
-    padding: 10px;
-    justify-self: center ;
-}
-.ts {
-    
-    grid-area: ts;
-    text-align: center;
-    padding: 10px;
-    justify-self: right;
-}
 
 .container {
     display: grid;
@@ -29,13 +11,40 @@ header {
     grid-template-rows: 1fr;
     background-color: linen;
     grid-gap: 10px;
+    align-items: center;
     grid-template-areas:
         "br . "
         "nav ts"
    
 }
  
-
+.br {
+    
+        grid-area: br;
+        /*justify-self: left;*/
+        align-items: center;
+        grid-column: 1;
+        grid-row: 1;
+    }
+.nav {
+    grid-area: nav;
+    text-align: center;
+    padding: 10px;
+    /*justify-self: center;*/
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1;
+}
+.ts {
+    
+    grid-area: ts;
+    text-align: center;
+    padding: 10px;
+     /*justify-self: right;*/
+    align-items: center;
+    grid-column: 3;
+    grid-row: 1;
+}
 
 .nav li{
     padding: 5px;
