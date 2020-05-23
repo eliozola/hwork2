@@ -43,6 +43,7 @@ grid-template-areas: header;
         "footer footer";
     }
 }
+
 //Mobile grid for Header
 .header-container {
     display: grid;
