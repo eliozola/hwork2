@@ -35,7 +35,7 @@ header {
     align-items: center;
     grid-column: 2;
     grid-row: 1;
-    display: grid;
+    display: inline;
 }
 .ts {
     
@@ -51,14 +51,14 @@ header {
 
 .nav li{
     padding: 5px;
-    display: grid;
+    display: inline;
 }
 .nav ul {
-    display: grid;
+    display: inline;
 }
 
 .nav-links a{
-    display: grid;
+    display: inline;
     color:  rgb(86, 91, 97);
     text-align: match-parent;
     padding: 10px 10px;
