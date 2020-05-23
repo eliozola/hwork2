@@ -7,22 +7,21 @@ header {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     background-color: linen;
     grid-gap: 10px;
     align-items: center;
     grid-template-areas:
-        "br . "
-        "nav ts"
+        "br br"
+        "nav ts";
    
 }
  
 .br {
     
         grid-area: br;
-        /*justify-self: left;*/
-        align-items: center;
+        justify-self: left;
         grid-column: 1;
         grid-row: 1;
     }
@@ -30,7 +29,7 @@ header {
     grid-area: nav;
     text-align: center;
     padding: 10px;
-    /*justify-self: center;*/
+    justify-self: center;
     align-items: center;
     grid-column: 2;
     grid-row: 1;
@@ -40,7 +39,7 @@ header {
     grid-area: ts;
     text-align: center;
     padding: 10px;
-     /*justify-self: right;*/
+    justify-self: right;
     align-items: center;
     grid-column: 3;
     grid-row: 1;
