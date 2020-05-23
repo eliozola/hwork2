@@ -9,6 +9,27 @@
 "ad"
 "footer"
 }
+.nav li{
+    padding: 5px;
+    display: inline-block;
+}
+.nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-links a{
+    display: inline-block;
+    color:  rgb(86, 91, 97);
+    text-align: match-parent;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+.nav-links a:hover{
+    background: yellowgreen ;
+    border-radius: 10%;
 .child {
     background-color: lightcoral;
 }
