@@ -7,8 +7,8 @@ header {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    /*grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;*/
     background-color: linen;
     grid-gap: 10px;
     align-items: center;
@@ -24,6 +24,7 @@ header {
         justify-self: left;
         grid-column: 1;
         grid-row: 1;
+        display: grid;
     }
 .nav {
     grid-area: nav;
@@ -33,6 +34,7 @@ header {
     align-items: center;
     grid-column: 2;
     grid-row: 1;
+    display: grid;
 }
 .ts {
     
@@ -43,15 +45,19 @@ header {
     align-items: center;
     grid-column: 3;
     grid-row: 1;
+    display: grid;
 }
 
 .nav li{
     padding: 5px;
-    display: inline;
+    display: grid;
+}
+.nav ul {
+    display: grid;
 }
 
 .nav-links a{
-    display: inline;
+    display: grid;
     color:  rgb(86, 91, 97);
     text-align: match-parent;
     padding: 10px 10px;
@@ -63,20 +69,19 @@ header {
     background: yellowgreen ;
     border-radius: 10%;
 }
-.ts {
+/*.ts {
     height: 6rem;
     width: 6rem;
     margin: 0.5rem; 
 }
 /*smartphone*/
 @media only screen and (max-width: 576px) {
+
 .container {
-        grid-template-columns: 1fr 1fr;
+        /*grid-template-columns: 1fr 1fr;*/
         grid-template-areas:
         "br br"
-        "nav ts";
-       /* margin-bottom: 10px;*/   
- }
+        "nav ts";}
   
 }
 body {
@@ -85,7 +90,7 @@ body {
 }
 @media only screen and (max-width: 992px){
     .container {
-        grid-template-columns: 1fr 1fr 1fr; 
+        /*grid-template-columns: 1fr 1fr 1fr;*/
         grid-template-areas:
         "br nav ts";
  }
@@ -96,7 +101,7 @@ body {
         /*background: transparent;
         display: grid;
         width: 100%;*/
-        grid-template-columns: 20% auto; 
+        /*grid-template-columns: 20% auto; */
         grid-template-areas:
         "br nav ts";
         margin-bottom: 10px;
