@@ -1,217 +1,444 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+
+    color: rgb(86, 91, 97);
+    font-family: monospace;
+    background-position: top;
+    
+    }
+
+.sidebar {
+    font-size: 13px;
+    padding: 10px;
 }
-body{
-    background: white;
+
+h1 {
+    display: inline;
+    
 }
-@media only screen and (max-width: 576px){
-    body.main-container{
-    box-sizing: border-box;
-    display: grid;
-    grid-template-areas: 
-    "b b"
-    "n t"
-    "ha ha"
-    "af af"
-    "ad ad"
-    "al al"
-    "fo fo";
-    grid-template-rows: 1fr 1fr 1fr 2fr 1fr 3fr 1fr;
-    grid-template-columns: 50% 50%;
-    grid-gap: 10px;
-    height: 100%;
-    margin: 0;
-    }
-        .sidebar-feature{
-    display: none;
-    }
-        .hero-feature{
-    display:none;
-    }
-    #big-ad{
-    display: none;
-    }
-    #small-ad{
-    max-width: 100%;
-    max-height: 100%;
-    }
+
+a {
+    color: rgb(86, 91, 97);
 }
-@media only screen and (min-width: 577px) and (max-width: 991px){
-    body.main-container{
-        box-sizing: border-box;
-        display: grid;
-        grid-template-areas:
-        "b b b n n n n n n t t t"
-        "hf hf hf hf hf hf hf hf hf hf hf hf"
-        "ha ha ha ha ha ha ha ha ha ha ha ha"
-        "af af af af af af af af af ad ad ad"
-        "al al al al al al al al al al al al"
-        "sf sf sf sf sf sf sf sf sf sf sf sf"
-        "fo fo fo fo fo fo fo fo fo fo fo fo";
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1fr 3fr 1fr 2fr 3fr 2fr 1fr;
-        grid-gap: 10px;
-        height: 100%;
-        margin: 0;
-    }
-    #small-ad{
-    display: none;
-    }
-    #big-ad{
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin: auto;
-    }
+
+.emphasize {
+    color: rgb(86, 91, 97);
 }
-@media only screen and (min-width: 992px){
-    body.main-container{
-        box-sizing: border-box;
-        display: grid;
-        grid-template-areas:
-        "b b b n n n n n n t t t"
-        "hf hf hf hf hf hf ha ha ha ad ad ad"
-        "af af af al al al al al al sf sf sf"
-        "fo fo fo fo fo fo fo fo fo fo fo fo";
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1fr 2fr 4fr 1fr;
-        grid-gap: 10px;
-        height: 100%;
-        margin: 0;
-    }
-    #small-ad{
-    display: none;
-    }
-    #big-ad{
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin: auto;
-    }
-}
-.header-brand{
-    grid-area: b;
-    background: white;
-    }
-    .global-nav{
-    grid-area: n;
-    background: #B0413E;
-    }
-    .header-tools{
-    grid-area: t;
-    background: #ADA8BE;
-    text-align: center;
-    }
-    .hero-action{
-    grid-area: ha;
-    background: #A16D42;
-    }
-    .article-feature{
-    grid-area: af;
-    background: #93827F;
-    }
-    .article-listing{
-    grid-area: al;
-    background: crimson;
-    }
-    .footer{
-    grid-area: fo;
-    background: darkcyan;
-    text-align: center;
+/*.nav li{
+    padding: 5px;
     display: inline-block;
-    padding-top: 40px;
-    font-family: 'Staatliches', cursive;
-    font-size: 1.5rem;
-    }
-    .ad{
-    grid-area: ad;
-    
-    }
-    .hero-feature{
-    grid-area: hf;
-    background: url("../images/hero\ image.jpeg");
-    background-size: cover;
-    }
-    .sidebar-feature{
-    background: #26547C;
-    grid-area: sf;
-    
-    }
-.header-brand{
-    background: url("../images/brand_icon.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
-ul{
+.nav ul {
     list-style: none;
     text-align: center;
-    padding-top: 25px;
 }
-li{
-    display: inline-block;
-}
-.img-tools{
-    width: 50px;
-}
-.global-nav.nav-list-links{
-    list-style-type: none;
-    display: inline-block;
-}
+*/
 .nav-links a{
-    display: block;
-    color: black;
-    text-align: center;
+    display: inline-block;
+    color:  rgb(86, 91, 97);
+    text-align: match-parent;
     padding: 10px 10px;
     text-decoration: none;
-    font-family: 'Staatliches', cursive;
-    font-size: 2rem;
+    font-size: 16px;
+
 }
 .nav-links a:hover{
-    background: white;
+    background: yellowgreen ;
     border-radius: 10%;
+
+.nav ul{
+    margin: 0;
+    padding: 0;
+    
+
+    
 }
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+.nav li{
+    display: inline;
+    padding: 5px;
+    
+        
 }
-#hero-action-id{
-    color: black;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-family: 'Staatliches', cursive;
-    font-size: 2.5rem;
+
+.nav {
+    font-size: 16px;
+    
+    
 }
-#hero-action-id:hover{
-    background: #CDC6C4;
-    border-radius: 10%;
+
+
+footer {
+   
+    height: 60px;
+    padding: 10px;
+    text-align:center;
+    background-color: linen;
 }
-#article{
-    line-height: 1.5em;
-    padding: 20px 20px 20px 20px;
-    font-family:  'Prompt', sans-serif;
-    color: white;
+
+.headercontent {
+    background: transparent;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 
+    auto auto auto;
+    grid-template-rows: auto auto;
+    
+    grid-template-areas:
+    "br br br br"
+    "gn gn ts ts";
+    margin-bottom: 10px;
+    background-color: linen; 
+
+    
 }
-h1{
-    color: black;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-family: 'Staatliches', cursive;
-    font-size: 2.5rem;
+
+.top {
+    font-size: 20px;
+    height: 50px;
+    width: auto;
+    }
+
+.brand {
+    
+    grid-area: br;
+    font-size: 15px;
+    padding:10px;
+    color:  rgb(86, 91, 97);
+    align-self: center;
+    justify-self: center;
+    vertical-align: center;
     text-align: center;
+    
+    
+
 }
-h3{
-    text-align: justify;
-    padding-left: 10px;
-    font-family: 'Staatliches', cursive;
+
+.brand img {
+    float: top;
 }
-p{
-    padding: 10px 10px 10px 10px;
-    line-height: 1.2rem;
-    font-family:  'Prompt', sans-serif;
+
+
+
+.globalnav {
+        
+    grid-area: gn;
+    text-align: center;
+    padding: 10px;
+    align-self: center;
+    justify-self: center;
+    
 }
+
+.tools {
+    
+    grid-area: ts;
+    text-align: center;
+    padding: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.middlecontent {
+    width: 100%;
+    display:grid;
+    font-size: 20px;
+    background: transparent;       
+    
+    margin-bottom: 10px;
+}
+
+.middle {
+    width: auto;
+}
+
+
+.footercontent {
+    display:grid;
+    color:  rgb(86, 91, 97);
+    
+}
+
+.herofeature {
+    grid-area: hf;
+    
+    
+}
+
+.herocall {
+    grid-area: hc;
+    font-size: 25px;
+    
+
+}
+.articlefeature {
+    grid-area: af;
+    
+    
+}
+.addy {
+    grid-area: ay;
+    
+    
+}
+
+.articlelisting {
+    grid-area: al;
+    
+}
+
+.sidebar {
+    grid-area: sb;
+    
+}
+
+button {
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+
+button:hover {
+    animation-name: buttonchange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+
+
+
+@keyframes buttonchange {
+  50% {
+    box-shadow: 0px 0px 30px snow;
+    transform: scale(1.2);
+    
+  }
+
+  100% {
+    box-shadow: inherit;
+  }
+}
+
+
+
+    @media only screen and (min-width: 576px) {
+
+       
+
+        .top {
+            height: auto;
+                   }    
+
+        
+
+                .middle.herocall {
+                    height: auto;
+                    text-align: center;
+                    
+                }
+
+
+        .articlefeature, .addy{
+            height:190px;
+        } 
+        .addy {
+            background: url(style/images/rescuemid.jpg);
+            background-repeat: no-repeat;
+            font-size: 16px;
+        }
+
+        .middle.articlelisting {
+            height:auto;
+        }
+                
+        .headercontent {
+                
+            grid-template-columns: 150px auto 214.28px;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "br gn ts";
+             
+        }
+    
+    
+        .middlecontent {
+            grid-template-columns: auto 214.28px;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-areas:
+            "hf hf"
+            "hc hc"
+            "af ay"
+            "al al"
+            "sb sb";
+            }
+        
+      
+        .middle {
+            padding: 10px;
+        }
+
+        .articlefeature, .articlelisting {
+            font-size: 16px;
+        }
+
+    }
+
+    h1 {
+        font-size:40px;
+    }
+    h2 {
+        font-size:25px;
+    }
+    h3 {
+        font-size:21px;
+    }
+    
+
+    @media only screen and (max-width: 575px) {
+
+        
+
+        .top {  
+            height: auto;
+        }
+
+        
+
+        
+        .herocall {
+            height: auto;
+            text-align: center;
+            font-size: 20px;           
+               
+        }
+
+        
+
+        .middlecontent {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto 102px auto;
+            grid-template-areas: 
+            "hc"
+            "af"
+            "ay"
+            "al";
+            gap: 10px;
+        }
+        
+        .herofeature {
+            display: none;
+        }
+        
+        .sidebar {
+            display: none;
+        }
+        
+        .headercontent {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        grid-template-areas:
+        "br br"
+        "gn ts";
+        
+        
+        }
+
+        .middle.articlefeature {
+            font-size: 16px;
+        }
+
+        .addy {
+            background: url(style/images/addymobile2.jpg);
+            font-size: 16px;
+            text-align: center;
+            padding: 30px
+        }
+
+        .articlelisting {
+            height:auto;
+            font-size: 16px;
+        }
+
+        .footercontent {
+            font-size: 13px;
+            height: 40px;
+        }
+
+        button {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size:30px;
+        }
+        h2 {
+            font-size:20px;
+        }
+        h3 {
+            font-size:19px;
+        }
+        
+        
+        }
+
+
+
+    
+        @media only screen and (min-width: 992px) {
+
+.innercontainerdesk {
+    width: 992px;
+    margin: auto;
+}
+
+
+
+            .headercontent {
+                
+                
+                
+                grid-template-columns: 150px auto 200px;
+                grid-template-rows: auto;
+                grid-template-areas:
+                "br gn ts";
+                gap: 10px;
+               
+            }
+        
+        
+            .middlecontent {
+                
+                grid-template-columns: 200px auto 298px 200px;
+                grid-template-rows: auto auto;
+                grid-template-areas: 
+                "hf hf hc ay"
+                "af al al sb";
+                gap: 30px;
+                
+            
+                }
+            .middle {
+                height: auto;
+            }
+
+            .middle.herocall {
+                height: auto;
+                text-align: center;
+                padding: 10px;
+                width: 300px;
+                justify-self: right;
+        }
+
+        .addy {
+            background-repeat: no-repeat;
+        }
+
+        .middle.sidebar {
+            font-size: 12px;
+        }
+
+
+    }
 
