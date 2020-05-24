@@ -5,10 +5,12 @@
 body {
     font-family: monospace;
     color: rgb(86, 91, 97);
+    margin: 40px;
 }
 header {
     font-size: 16px;
 }
+
 .header-container {
     grid-template-columns: 50px 50px;
     grid-template-areas:
@@ -186,9 +188,15 @@ margin-bottom: 10px
 }
 .phone-ad {
     grid-area: ad;
+    width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
 }
 .tablet-ad {
     grid-area: ad;
+    height: auto;
+    max-width: 100px;
 }
 .article-listing {
     grid-area: al;
