@@ -17,6 +17,17 @@ header {
     "br br"
     "nav ts";}
 
+ .container {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-areas:
+         "br br"
+         "nav ts"
+         "af"
+         "ad"
+         "al"
+         "footer";
+      }
 .container1
 {background: linen;
 display: grid;
@@ -27,6 +38,19 @@ grid-template-rows: auto auto;
 margin-bottom: 10px
 }
 
+/*.main-container {
+
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "br nav ts"
+     "hf hf hf"
+     "ha ha ha"
+     "af ad"
+     "al al al"
+     "sf sf sf"
+     "fo fo fo";
+}*/
  
 /*smartphone*/
 @media only screen and (max-width: 576px) {
