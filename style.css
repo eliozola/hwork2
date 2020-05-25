@@ -25,13 +25,14 @@ margin-bottom: 10px
 }
 
 @media only screen and (min-width: 576px) {
+    
 .container1 { 
     grid-template-columns: 30% 30% 40%;
     grid-template-rows: 15vh;
     display: grid;
     grid-template-areas: 
     "br br"
-    "nav ts";}
+    "nav ts";}*/
 
     .mybody{
         grid-template-columns: 30% 30% 40%;
@@ -112,7 +113,7 @@ margin-bottom: 10px
     display: grid;
     line-height: 20px;
 }
-.ts {
+.tools {
     
     grid-area: ts;
     text-align: center;
@@ -193,8 +194,6 @@ margin-bottom: 10px
     padding: 10px;
     justify-self: center;
     align-items: center;
-    grid-column: 2;
-    grid-row: 1;
     display: grid;
     line-height: 20px;}
 
