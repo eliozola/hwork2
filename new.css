@@ -1,0 +1,143 @@
+body {
+    margin: 40px;
+    font-family: monospace;
+    color: rgb(86, 91, 97);
+    margin: 40px;
+}
+header {
+    font-size: 16px;
+}
+
+.brand {
+    grid-area: br;
+    justify-self: left;
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    align-self: center;
+justify-self: center;
+vertical-align: center;
+padding: 10px;
+}
+
+.nav-links a{
+    display: inline-block;
+    color:  rgb(86, 91, 97);
+    text-align: match-parent;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+.nav-links a:hover{
+    background: yellowgreen ;
+    border-radius: 10%}
+
+    .brand {
+        grid-area: br;
+    }
+    .navigation {
+        grid-area: nav;
+    }
+    .tools {
+        grid-area: tools;
+    }
+  .herofeature {
+          grid-area: hf;
+      }
+  
+      .herocall {
+          grid-area: hc;
+      }
+  
+      .article-feature {
+          grid-area: af;
+      }
+      .ad {
+          grid-area: ad;
+      }
+  .article-listing {
+      grid-area: al;
+  }
+  .sidebar {
+          grid-area: sidebar;
+      }
+      .footer {
+          grid-area: footer;
+      }
+      
+  
+    .wrapper {
+      display: grid;
+      grid-gap: 1em; 
+      background-color: linen;
+      color: rgb(86, 91, 97);
+      grid-template-areas:
+       "br"
+       "nav"
+       "tools"
+       "hf"
+       "hc"
+       "af"
+       "ad1"
+       "ad2"
+       "al"
+       "sidebar"
+       "footer"
+    }
+    .small-ad {
+        grid-area: ad2;
+        background-image: url("images/softea\ 2.jpeg");
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        object-fit: contain;
+      }
+      .big-ad {
+          grid-area: ad1;
+          background-image: url("images/softea.jpeg");
+          background-repeat: no-repeat;
+          height: 100%;
+      }
+
+      @media only screen and (min-width: 576px)  {
+      .wrapper {
+  
+          grid-template-columns: 40% auto;
+          grid-template-areas:
+      "br br"
+      "nav tools"
+      "hc hc"
+      "af af"
+      "ad2 ad2"
+      "al al"
+      "footer footer";
+      }
+      }
+  
+      @media only screen and (max-width: 992px)   {
+          .wrapper {
+        grid-gap: 40px;
+              grid-template-columns: 120px auto 120px;
+              grid-template-areas:
+              "br nav tools"
+              "hf hf hf"
+              "ha ha ha"
+              "af af ad1"
+              "al al al"
+              "sidebar sidebar sidebar"
+              "footer footer footer";
+              /*max-width: 600px;*/
+          }
+      }
+  
+  .box {
+    background-color:linen;
+    color: rgb(86, 91, 97);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%; 
+  }
+  
+ 
