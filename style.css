@@ -17,7 +17,7 @@ header {
 display: grid;
 width: 100%;
 grid-template-columns: 40% 60%;
-grid-template-rows: 5vh 10vh;
+grid-template-rows: 15vh;
 grid-template-areas: 
 "br br"
 "nav ts";
@@ -28,13 +28,23 @@ margin-bottom: 10px
 .container1 { 
     grid-template-columns: 30% 30% 40%;
     grid-template-rows: 15vh;
+    display: grid;
     grid-template-areas: 
     "br br"
     "nav ts";}
 
-    .tablet-ad{
-        display: none;
-        }
+    .mybody{
+        grid-template-columns: 30% 30% 40%;
+        grid-template-rows: 15vh;
+        display: grid;
+        grid-template-areas:
+        "ha ha"
+        "af af"
+        "ad1 ad1"
+        "al al"
+        "fo fo";
+    }
+
         .phone-ad{
         width: 100%;
         height: 100%;
@@ -42,6 +52,13 @@ margin-bottom: 10px
 }
 
 @media only screen and (max-width: 992px){
+    .container1 { 
+        grid-template-columns: 30% 30% 40%;
+        grid-template-rows: 15vh;
+        display: grid;
+        grid-template-areas: 
+        "br nav ts";}
+    
     .mybody{
         grid-template-columns: 20% 20% 20% 20%;
         grid-template-rows: 15vh 15vh;
@@ -50,7 +67,7 @@ margin-bottom: 10px
         "br br br nav nav nav nav nav nav ts ts ts"
         "hf hf hf hf hf hf hf hf hf hf hf hf"
         "ha ha ha ha ha ha ha ha ha ha ha ha"
-        "af af af af af af af af af ad ad ad"
+        "af af af af af af af af af ad2 ad2 ad2"
         "al al al al al al al al al al al al"
         "sf sf sf sf sf sf sf sf sf sf sf sf"
         "fo fo fo fo fo fo fo fo fo fo fo fo";
@@ -60,9 +77,7 @@ margin-bottom: 10px
         height: 100%;
         margin: 0;}
 
-    .phone-ad img {
-    display: none;
-    }
+
     .tablet-ad img {
     max-width: 100%;
     max-height: 100%;
@@ -143,16 +158,18 @@ margin-bottom: 10px
     grid-area: af;
 }
 .phone-ad {
-  grid-area: ad;
+  grid-area: ad2;
   background-image: url("images/softea\ 2.jpeg");
+  background-repeat: no-repeat;
   width: 100%;
   max-width: 400px;
   height: 100%;
   object-fit: contain;
 }
 .tablet-ad {
-    grid-area: ad;
+    grid-area: ad1;
     background-image: url("images/softea.jpeg");
+    background-repeat: no-repeat;
     height: 100%;
 }
 .tablet-ad img {
@@ -164,13 +181,10 @@ margin-bottom: 10px
 .article-listing {
     grid-area: al;
 }
-.footer {
-    grid-area: fo;
-}
 .sidebar-feature {
     grid-area: sf;
 }
-.footer{
+.footer {
     grid-area: fo;
     text-align: center;
     padding: 10px;
