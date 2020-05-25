@@ -11,155 +11,40 @@ header {
     font-size: 16px;
 }
 
-.header-container {
-    grid-template-columns: 50px 50px;
-    grid-template-areas:
-    "br br"
-    "nav ts";}
 
- .container {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-areas:
-         "br br"
-         "nav ts"
-         "af"
-         "ad"
-         "al"
-         "footer";
-      }
 .container1
 {background: linen;
 display: grid;
 width: 100%;
-grid-template-columns: auto 
-auto auto auto;
-grid-template-rows: auto auto;
+grid-template-columns: 40% 60%;
+grid-template-rows: 5vh 10vh;
+grid-template-areas: 
+"br br"
+"nav ts";
 margin-bottom: 10px
 }
 
-/*.main-container  {
-    grid-template-columns: auto 210px;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas:
-        "hf hf"
-        "ha ha"
-        "af ad"
-        "al al"
-        "sf sf";*/
-}
-/*.main-container {
-
-    display: grid;
-    grid-gap: 1em;
-    grid-template-areas:
-     "br nav ts"
-     "hf hf hf"
-     "ha ha ha"
-     "af ad"
-     "al al al"
-     "sf sf sf"
-     "fo fo fo";
-}*/
- 
-/*smartphone*/
-/*{
-    .herocall {
-        height: auto;
-        text-align: center;
-        
-    }
-
-.article-feature, .ad{
-height:190px;
-} 
-.ad {
-background: url("images/softea\ 2.jpeg");
-background-repeat: no-repeat;
-font-size: 16px;
-}
-
-.article-listing {
-height:auto;
-}
-    
-.header-container {  
-grid-template-columns: 150px auto 214.28px;
-grid-template-rows: auto;
-grid-template-areas:
-"br nav ts";
- 
-}
-
-
-.middlecontent {
-grid-template-columns: auto 214.28px;
-grid-template-rows: auto auto auto auto auto;
-grid-template-areas:
-"hf hf"
-"ha ha"
-"af ad"
-"al al"
-"sf sf";
-}
-
-
-.middle {
-padding: 10px;
-}
-
-.article-feature, .article-listing {
-font-size: 16px;
-}*/
 @media only screen and (min-width: 576px) {
-    body.container{
-        box-sizing: border-box;
-        display: grid;
-        grid-template-areas:
-        "br br"
-        "nav ts"
-        "hc hc"
-        "af af"
-        "ad ad"
-        "al al"
-        "fo fo";
-        grid-template-rows: 1fr 1fr 1fr 2fr 1fr 3fr 1fr;
-        grid-template-columns: 50% 50%;
-        grid-gap: 10px;
-        height: 100%;
-        margin: 0;
-        }
-        .main-container  {
-            grid-template-columns: auto 210px;
-            grid-template-rows: auto auto auto auto auto;
-            grid-template-areas:
-                "hf hf"
-                "ha ha"
-                "af ad"
-                "al al"
-                "sf sf";
-        }
-            .sidebar-feature{
-        display: none;
-        }
-            .hero-feature{
-        display:none;
-        }
-        .tablet-ad{
+.container1 { 
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 15vh;
+    grid-template-areas: 
+    "br br"
+    "nav ts";}
+
+    .tablet-ad{
         display: none;
         }
         .phone-ad{
-        /*max-width: 100%;
-        max-height: 70%;
-        width: 100%;*/
-        max-width: 450px;
+        width: 100%;
         height: 100%;
         }
-    }
+}
 
 @media only screen and (max-width: 992px){
-    body.container{
-        box-sizing: border-box;
+    .mybody{
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-rows: 15vh 15vh;
         display: grid;
         grid-template-areas:
         "br br br nav nav nav nav nav nav ts ts ts"
@@ -173,46 +58,23 @@ font-size: 16px;
         grid-template-rows: 1fr 3fr 1fr 2fr 3fr 2fr 1fr;
         grid-gap: 10px;
         height: 100%;
-        margin: 0;
-    }
+        margin: 0;}
+
     .phone-ad img {
     display: none;
     }
     .tablet-ad img {
     max-width: 100%;
     max-height: 100%;
-    display: block;
+    display: grid;
     margin: auto;
-
+}
+    
  }
 
-}
-@media only screen and (min-width: 992px){
-    body.main-container{
-        box-sizing: border-box;
-        display: grid;
-        grid-template-areas:
-        "br br br nav nav nav nav nav nav ts ts ts"
-        "hf hf hf hf hf hf ha ha ha ad ad ad"
-        "af af af al al al al al al sf sf sf"
-        "fo fo fo fo fo fo fo fo fo fo fo fo";
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1fr 2fr 4fr 1fr;
-        grid-gap: 10px;
-        height: 100%;
-        margin: 0;
-    }
-    #phone-ad{
-    display: none;
-    }
-    #tablet-ad{
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin: auto;
-    }
-}
-.br {
+
+   
+.brand {
         grid-area: br;
         justify-self: left;
         grid-column: 1;
@@ -223,6 +85,7 @@ font-size: 16px;
     vertical-align: center;
     padding: 10px;
     }
+
 .nav {
     grid-area: nav;
     text-align: center;
@@ -231,7 +94,7 @@ font-size: 16px;
     align-items: center;
     grid-column: 2;
     grid-row: 1;
-    display: inline;
+    display: grid;
     line-height: 20px;
 }
 .ts {
@@ -271,7 +134,6 @@ font-size: 16px;
 .hero-feature {
     grid-area: hf;
     }
-}
 
 .herocall {
     grid-area: hc;
@@ -284,7 +146,7 @@ font-size: 16px;
   grid-area: ad;
   background-image: url("images/softea\ 2.jpeg");
   width: 100%;
-  max-width: 450px;
+  max-width: 400px;
   height: 100%;
   object-fit: contain;
 }
@@ -295,7 +157,7 @@ font-size: 16px;
 }
 .tablet-ad img {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     height: 100%;
     object-fit: contain;
 }
@@ -316,5 +178,55 @@ font-size: 16px;
     align-items: center;
     grid-column: 2;
     grid-row: 1;
-    display: inline;
+    display: grid;
     line-height: 20px;}
+
+
+
+       /* box-sizing: border-box;
+        display: grid;
+        grid-template-areas:
+        "br br"
+        "nav ts"
+        "hc hc"
+        "af af"
+        "ad ad"
+        "al al"
+        "fo fo";
+        grid-template-rows: 1fr 1fr 1fr 2fr 1fr 3fr 1fr;
+        grid-template-columns: 30% 30%;
+        grid-gap: 10px;
+        height: 100%;
+        margin: 0;
+        }
+
+        /*.main-container  {
+            grid-template-columns: auto 210px;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-areas:
+                "hf hf"
+                "ha ha"
+                "af ad"
+                "al al"
+                "sf sf";
+        }
+            .sidebar-feature{
+        display: none;
+        }
+            .hero-feature{
+        display:none;
+        }
+        .tablet-ad{
+        display: none;
+        }
+        .phone-ad{
+        /*max-width: 100%;
+        max-height: 70%;
+        width: 100%;
+        max-width: 450px;
+        height: 100%;
+        }
+    }*/
+
+
+
