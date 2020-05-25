@@ -186,7 +186,10 @@ margin-bottom: 10px
 }
 .footer {
     grid-area: fo;
+    position: fixed;
     text-align: center;
+    margin-top: 20px;
+    bottom: 0;
     padding: 10px;
     justify-self: center;
     align-items: center;
