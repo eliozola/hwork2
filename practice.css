@@ -8,21 +8,17 @@ body {
 
 .sidebar {
     font-size: 13px;
-    padding: 10px;
+    padding: 20px;
 }
 
-h1 {
+h1, h2 {
     display: inline;
-    
+    color: rgb(166, 202, 93);
 }
 
 a {
     color:  rgb(86, 91, 97);
 }
-
-/*.emphasize {
-    color: yellowgreen;
-}*/
 
 .top.globalnav ul{
     margin: 0;
@@ -52,7 +48,7 @@ a {
     
 }
 .top.globalnav a:hover{
-    background: yellowgreen ;
+    background: rgb(166, 202, 93);
     border-radius: 10%;
 }
 
@@ -64,13 +60,6 @@ input {
     
     
 }
-
-::placeholder {
-    color:  rgb(86, 91, 97);
-   font-family: monospace;
-   font-size: 12px;
-}
-
 
 footer {
    
@@ -196,13 +185,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
     @media only screen and (min-width: 576px) {
 
        
@@ -223,8 +205,8 @@ footer {
         .articlefeature, .addy{
             height:190px;
         } 
-        .addy {
-            background: url(style/images/rescuemid.jpg);
+        .middle.addy {
+            background: url("images/softea\ 2.jpeg");
             background-repeat: no-repeat;
             font-size: 16px;
         }
@@ -235,7 +217,7 @@ footer {
                 
         .headercontent {
                 
-            grid-template-columns: 150px auto 214.28px;
+            grid-template-columns: 150px auto 220px;
             grid-template-rows: auto;
             grid-template-areas:
             "br gn ts";
@@ -245,7 +227,7 @@ footer {
     
         .middlecontent {
             
-            grid-template-columns: auto 214.28px;
+            grid-template-columns: auto 220px;
             grid-template-rows: auto auto auto auto auto;
             grid-template-areas: 
             "hf hf"
@@ -278,7 +260,7 @@ footer {
     }
     
 
-    @media only screen and (max-width: 575px) {
+@media only screen and (max-width: 992px) {
 
         
 
@@ -300,7 +282,7 @@ footer {
 
         .middlecontent {
             grid-template-columns: auto;
-            grid-template-rows: auto auto 102px auto;
+            grid-template-rows: auto auto 100px auto;
             grid-template-areas: 
             "hc"
             "af"
