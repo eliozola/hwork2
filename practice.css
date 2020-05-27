@@ -155,6 +155,9 @@ footer {
 .herofeature {
     grid-area: hf;
     display: inline;
+    max-width: 100%;
+    height: auto;
+    
 }
 
 .herocall {
@@ -170,8 +173,10 @@ footer {
     
 }
 .addy {
-    grid-area: ay;
-    
+   grid-area: ay;
+   max-width: 100%;
+   height: auto;
+
     
 }
 
@@ -198,6 +203,7 @@ footer {
 
                 .middle.herocall {
                     height: auto;
+                    max-width: 100%;
                     align-items: center;
                     
                 }
@@ -209,7 +215,8 @@ footer {
         .middle.addy {
             background: url("images/softea\ 2.jpeg");
             background-repeat: no-repeat;
-            font-size: 16px;
+            max-width: 100%;
+            height: auto;
         }
 
         .middle.articlelisting {
@@ -319,6 +326,7 @@ footer {
         .addy {
             background: url(style/images/addymobile2.jpg);
             font-size: 16px;
+            max-width: 100%;
             text-align: center;
             padding: 30px
         }
