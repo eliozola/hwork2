@@ -160,7 +160,8 @@ footer {
 .herocall {
     grid-area: hc;
     font-size: 25px;
-    
+    text-align: center;
+    align-items: center;
 
 }
 .articlefeature {
@@ -197,13 +198,13 @@ footer {
 
                 .middle.herocall {
                     height: auto;
-                    text-align: center;
+                    align-items: center;
                     
                 }
 
 
         .articlefeature, .addy{
-            height:190px;
+            height: 200px;
         } 
         .middle.addy {
             background: url("images/softea\ 2.jpeg");
@@ -213,6 +214,7 @@ footer {
 
         .middle.articlelisting {
             height:auto;
+            align-items: center;
         }
                 
         .headercontent {
