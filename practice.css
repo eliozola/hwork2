@@ -37,11 +37,23 @@ a {
     
         
 }
+.top.globalnav a{
+    display: inline-block;
+    color:  rgb(86, 91, 97);
+    text-align: match-parent;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
 
+}
 .top.globalnav {
     font-size: 16px;
+
     
-    
+}
+.top.globalnav a:hover{
+    background: yellowgreen ;
+    border-radius: 10%;
 }
 
 input {
@@ -141,7 +153,7 @@ footer {
 }
 
 .middle {
-    width: 50% ;
+    width: 100% ;
 }
 
 
@@ -183,20 +195,6 @@ footer {
     
 }
 
-button {
-    font-size: 20px;
-    font-family: monospace;
-    margin: 10px;
-}
-
-
-button:hover {
-    animation-name: buttonchange;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    
-
-}
 
 
 
