@@ -24,7 +24,7 @@ grid-template-areas:
 margin-bottom: 10px
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 576px) {
     
 .container1 { 
     grid-template-columns: 30% 30% 40%;
@@ -41,7 +41,7 @@ margin-bottom: 10px
         grid-template-areas:
         "ha ha"
         "af af"
-        "ad1 ad1"
+        "tabletad tabletad"
         "al al"
         "fo fo";
     }
@@ -68,7 +68,7 @@ margin-bottom: 10px
         "br br br nav nav nav nav nav nav ts ts ts"
         "hf hf hf hf hf hf hf hf hf hf hf hf"
         "ha ha ha ha ha ha ha ha ha ha ha ha"
-        "af af af af af af af af af ad2 ad2 ad2"
+        "af af af af af af af af af phonead phonead phonead"
         "al al al al al al al al al al al al"
         "sf sf sf sf sf sf sf sf sf sf sf sf"
         "fo fo fo fo fo fo fo fo fo fo fo fo";
@@ -161,7 +161,7 @@ margin-bottom: 10px
     grid-area: af;
 }
 .phone-ad {
-  grid-area: ad2;
+  grid-area: phonead;
   background-image: url("images/softea\ 2.jpeg");
   background-repeat: no-repeat;
   width: 100%;
@@ -170,7 +170,7 @@ margin-bottom: 10px
   object-fit: contain;
 }
 .tablet-ad {
-    grid-area: ad1;
+    grid-area: tabletad;
     background-image: url("images/softea.jpeg");
     background-repeat: no-repeat;
     height: 100%;
