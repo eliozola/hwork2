@@ -1,210 +1,428 @@
-*{
-    box-sizing: border-box;
-    font-family: monospace;
-}
 body {
+    
+    color:  rgb(86, 91, 97);
     font-family: monospace;
-    color: rgb(86, 91, 97);
-    margin: 40px;
+    background-position: top;
+    
+    }
+
+.sidebar {
+    font-size: 13px;
+    padding: 10px;
 }
-header {
+
+h1 {
+    display: inline;
+    
+}
+
+a {
+    color:  rgb(86, 91, 97);
+}
+
+/*.emphasize {
+    color: yellowgreen;
+}*/
+
+.top.globalnav ul{
+    margin: 0;
+    padding: 0;
+    
+
+    
+}
+.top.globalnav li{
+    display: inline;
+    padding: 5px;
+    
+        
+}
+
+.top.globalnav {
     font-size: 16px;
-}
-
-
-.container1
-{background: linen;
-display: grid;
-width: 100%;
-grid-template-columns: 40% 60%;
-grid-template-rows: 15vh;
-grid-template-areas: 
-"br br"
-"nav ts";
-margin-bottom: 10px
-}
-
-@media only screen and (min-width: 576px) {
     
-.container1 { 
-    grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 15vh;
-    display: grid;
-    grid-template-areas: 
-    "br br"
-    "nav ts";}
-
-    .mybody{
-        grid-template-columns: 1fr minmax(auto, 992px) 1fr;
-        grid-template-rows: 15vh;
-        grid-column: 2;
-        grid-gap: 10px;
-        display: grid;
-        grid-template-areas:
-        "ha ha"
-        "af af"
-        "ad1 ad1"
-        "al al"
-        "fo fo";
-    }
-
-        .phone-ad{
-        grid-column: span 2;
-        }
-        .article-feature {
-            grid-column: span;
-        }
-        .article-listing {
-            grid-column: 1;
-            grid-row: 2;
-        }
+    
 }
 
-@media only screen and (max-width: 992px){
-    .container1 { 
-        grid-template-columns: 30% 30% 40%;
-        grid-template-rows: 15vh;
-        display: grid;
-        grid-template-areas: 
-        "br nav ts";}
+input {
+    width: 100px;
+    color: rgb(86, 91, 97);
+    background-color: transparent;
+    border:  rgb(86, 91, 97);
     
-    .mybody{
-        grid-template-columns: 20% 20% 20% 20%;
-        grid-template-rows: 15vh 15vh;
-        display: grid;
-        grid-template-areas:
-        "br br br nav nav nav nav nav nav ts ts ts"
-        "hf hf hf hf hf hf hf hf hf hf hf hf"
-        "ha ha ha ha ha ha ha ha ha ha ha ha"
-        "af af af af af af af af af ad2 ad2 ad2"
-        "al al al al al al al al al al al al"
-        "sf sf sf sf sf sf sf sf sf sf sf sf"
-        "fo fo fo fo fo fo fo fo fo fo fo fo";
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1fr 3fr 1fr 2fr 3fr 2fr 1fr;
-        grid-gap: 10px;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-
-    .tablet-ad img {
-    max-width: 100%;
-    max-height: 100%;
-    display: grid;
-    margin: auto;
+    
 }
-    
- }
+
+::placeholder {
+    color:  rgb(86, 91, 97);
+   font-family: monospace;
+   font-size: 12px;
+}
 
 
+footer {
    
+    height: 60px;
+    padding: 10px;
+    text-align:center;
+    background-color: linen;
+}
+
+.headercontent {
+    background: transparent;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 
+    auto auto auto;
+    grid-template-rows: auto auto;
+    
+    grid-template-areas:
+    "br br br br"
+    "gn gn ts ts";
+    margin-bottom: 10px;
+    background-color: linen
+
+    
+}
+
+.top {
+    font-size: 20px;
+    height: 50px;
+    width: auto;
+    }
+
 .brand {
-        grid-area: br;
-        justify-self: left;
-        grid-column: 1;
-        grid-row: 1;
-        display: grid;
-        align-self: center;
+    
+    grid-area: br;
+    font-size: 15px;
+    padding:10px;
+    color:  rgb(86, 91, 97);
+    align-self: center;
     justify-self: center;
     vertical-align: center;
-    padding: 10px;
-    }
+    text-align: center;
+    
+    
 
-.nav {
-    grid-area: nav;
+}
+
+.brand img {
+    float: top;
+}
+
+
+
+.globalnav {
+        
+    grid-area: gn;
     text-align: center;
     padding: 10px;
+    align-self: center;
     justify-self: center;
-    align-items: center;
-    grid-column: 2;
-    grid-row: 1;
-    display: grid;
-    line-height: 20px;
+    
 }
+
 .tools {
     
     grid-area: ts;
     text-align: center;
     padding: 10px;
-    justify-self: right;
-    align-items: center;
-    grid-column: 3;
-    grid-row: 1;
-    display: grid;
+    align-self: center;
+    justify-self: center;
 }
 
-.nav li{
-    padding: 5px;
-    display: inline-block;
-}
-.nav ul {
-    list-style: none;
+.middlecontent {
+    width: 100%;
+    display:grid;
+    font-size: 20px;
+    background: transparent;       
     text-align: center;
+    margin-bottom: 10px;
 }
 
-.nav-links a{
-    display: inline-block;
+.middle {
+    width: 50% ;
+}
+
+
+.footercontent {
+    display:grid;
     color:  rgb(86, 91, 97);
-    text-align: match-parent;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 16px;
+    
+}
 
-}
-.nav-links a:hover{
-    background: yellowgreen ;
-    border-radius: 10%;
-}
-.hero-feature {
+.herofeature {
     grid-area: hf;
-    }
+    display: inline;
+}
 
 .herocall {
     grid-area: hc;
-}
+    font-size: 25px;
+    
 
-.article-feature {
+}
+.articlefeature {
     grid-area: af;
+    
+    
 }
-.phone-ad {
-  grid-area: ad2;
-  background-image: url("images/softea\ 2.jpeg");
-  background-repeat: no-repeat;
-  width: 100%;
-  max-width: 400px;
-  height: 100%;
-  object-fit: contain;
+.addy {
+    grid-area: ay;
+    
+    
 }
-.tablet-ad {
-    grid-area: ad1;
-    background-image: url("images/softea.jpeg");
-    background-repeat: no-repeat;
-    height: 100%;
-}
-.tablet-ad img {
-    width: 100%;
-    max-width: 400px;
-    height: 100%;
-    object-fit: contain;
-}
-.article-listing {
+
+.articlelisting {
     grid-area: al;
+    
 }
-.sidebar-feature {
-    grid-area: sf;
+
+.sidebar {
+    grid-area: sb;
+    
 }
-.footer {
-    grid-area: fo;
-    position: fixed;
-    text-align: center;
-    margin-top: 20px;
-    bottom: 0;
-    padding: 10px;
-    justify-self: center;
-    align-items: center;
-    display: grid;
-    line-height: 20px;}
+
+button {
+    font-size: 20px;
+    font-family: monospace;
+    margin: 10px;
+}
 
 
+button:hover {
+    animation-name: buttonchange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+
+
+
+
+
+
+
+    @media only screen and (min-width: 576px) {
+
+       
+
+        .top {
+            height: auto;
+                   }    
+
+        
+
+                .middle.herocall {
+                    height: auto;
+                    text-align: center;
+                    
+                }
+
+
+        .articlefeature, .addy{
+            height:190px;
+        } 
+        .addy {
+            background: url(style/images/rescuemid.jpg);
+            background-repeat: no-repeat;
+            font-size: 16px;
+        }
+
+        .middle.articlelisting {
+            height:auto;
+        }
+                
+        .headercontent {
+                
+            grid-template-columns: 150px auto 214.28px;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "br gn ts";
+             
+        }
+    
+    
+        .middlecontent {
+            
+            grid-template-columns: auto 214.28px;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-areas: 
+            "hf hf"
+            "hc hc"
+            "af ay"
+            "al al"
+            "sb sb";
+        
+            }
+        
+      
+        .middle {
+            padding: 10px;
+        }
+
+        .articlefeature, .articlelisting {
+            font-size: 16px;
+        }
+
+    }
+
+    h1 {
+        font-size:40px;
+    }
+    h2 {
+        font-size:25px;
+    }
+    h3 {
+        font-size:21px;
+    }
+    
+
+    @media only screen and (max-width: 575px) {
+
+        
+
+        .top {  
+            height: auto;
+        }
+
+        
+
+        
+        .herocall {
+            height: auto;
+            text-align: center;
+            font-size: 20px;           
+               
+        }
+
+        
+
+        .middlecontent {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto 102px auto;
+            grid-template-areas: 
+            "hc"
+            "af"
+            "ay"
+            "al";
+            gap: 10px;
+        }
+        
+        .herofeature {
+            display: none;
+        }
+        
+        .sidebar {
+            display: none;
+        }
+        
+        .headercontent {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        grid-template-areas:
+        "br br"
+        "gn ts";
+        
+        
+        }
+
+        .middle.articlefeature {
+            font-size: 16px;
+        }
+
+        .addy {
+            background: url(style/images/addymobile2.jpg);
+            font-size: 16px;
+            text-align: center;
+            padding: 30px
+        }
+
+        .articlelisting {
+            height:auto;
+            font-size: 16px;
+        }
+
+        .footercontent {
+            font-size: 13px;
+            height: 40px;
+        }
+
+        button {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size:30px;
+        }
+        h2 {
+            font-size:20px;
+        }
+        h3 {
+            font-size:19px;
+        }
+        
+        
+        }
+
+
+
+    
+        @media only screen and (min-width: 992px) {
+
+.innercontainerdesk {
+    width: 992px;
+    margin: auto;
+}
+
+
+
+            .headercontent {
+                
+                
+                
+                grid-template-columns: 150px auto 200px;
+                grid-template-rows: auto;
+                grid-template-areas:
+                "br gn ts";
+                gap: 10px;
+               
+            }
+        
+        
+            .middlecontent {
+                
+                grid-template-columns: 200px auto 298px 200px;
+                grid-template-rows: auto auto;
+                grid-template-areas: 
+                "hf hf hc ay"
+                "af al al sb";
+                gap: 30px;
+                
+            
+                }
+            .middle {
+                height: auto;
+            }
+
+            .middle.herocall {
+                height: auto;
+                text-align: center;
+                padding: 10px;
+                width: 300px;
+                justify-self: right;
+        }
+
+        .addy {
+            background-repeat: no-repeat;
+        }
+
+        .middle.sidebar {
+            font-size: 12px;
+        }
+
+
+    }
