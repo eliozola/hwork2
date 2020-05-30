@@ -127,12 +127,20 @@ header .tools input[type=text] {
 	border-radius: 4px;
 }
 
-
+h1 {
+    padding: 10px;
+	justify-self: center;
+    align-items: center;
+    text-align: center;
+}
 /* Tolls: End */
 
 .phone-ad img,
 .hero-feature img {
 	width: 100%;
+}
+.hero-feature,.desktop-ad, aside {
+    display: none;
 }
 
 footer {
@@ -150,7 +158,49 @@ footer {
 */
 
 @media only screen and (min-width: 576px) {
+    body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    header, footer, .hero, .main {
+        grid-column: 1/4;
+    }
+    header .brand {
+        grid-column: 1/1;
+    }
+    header .nav {
+        grid-column: 2/5;
+    }
+    header .tools {
+        grid-column: 5/6;
+    }
+    header ul li {
+        display: block;
 
+    }
+    header ul li.mobile {
+        display: none;
+    }
+    .hero-feature {
+        display: block;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .article-feature {
+        grid-column: 1/4;
+    }
+    .phone-ad {
+        display: none;
+    }
+    .desktop-ad {
+        grid-column: 4/6;
+        display: block;
+    }
+    .article-listing, aside {
+        grid-column: 1/6;
+    }
+    
 }
 
 
@@ -167,8 +217,12 @@ footer {
 		padding-left: 50px;
 	}
 	.desktop-ad img {
-		width: 100%;
+        display: block;
+        width: 100%;
 		max-width: 380px;
 		float: right;
-	}
+    }
+    .phone-ad img {
+        display: none;
+    }
 }
