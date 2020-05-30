@@ -42,7 +42,7 @@ header .nav {
 
 header ul {
 	background: darkorange;
-	list-style: none;
+    list-style: none;
 	margin: 0;
 	padding-left: 0;
 }
@@ -50,7 +50,7 @@ header ul {
 header ul li {
 	color: #fff;
 	background: darkorange;
-	display: block;
+	display: none;
 	float: left;
 	padding: 5px;
 	position: relative;
@@ -58,6 +58,12 @@ header ul li {
 	text-decoration: none;
 	transition-duration: 0.5s;
 }
+header ul li.mobile,
+header ul li ul li
+{
+    display: block;
+}
+ 
 
 header ul li a {
 	color: #fff;
@@ -109,6 +115,7 @@ header ul li ul li {
 /* Tolls: Start */
 header .tools {
     grid-column: 4/6;
+    justify-self: center;
 
 }
 
