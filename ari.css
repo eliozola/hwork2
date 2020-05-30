@@ -1,0 +1,167 @@
+body {
+	font-family: monospace;
+	color: rgb(86, 91, 97);
+	margin: 40px;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-gap: 1em;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+    font-size: 16px;
+    display: grid;
+	background: linen;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+header .brand {
+	justify-self: center;
+    padding: 10px;
+    grid-column: 1/6;
+}
+
+
+/* Menu: Start */
+
+header a {
+	text-decoration: none;
+}
+
+header .nav {
+    /* ????? */
+    grid-column: 1/4;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+header ul {
+	background: darkorange;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+header ul li {
+	color: #fff;
+	background: darkorange;
+	display: block;
+	float: left;
+	padding: 5px;
+	position: relative;
+	margin-right: 1px;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+header ul li a {
+	color: #fff;
+}
+
+header ul li:hover,
+header ul li:focus-within {
+	background: red;
+	cursor: pointer;
+}
+
+header li:focus-within a {
+	outline: none;
+}
+
+header ul li ul {
+	background: orange;
+	visibility: hidden;
+	opacity: 0;
+	min-width: 5rem;
+	position: absolute;
+	transition: all 0.5s ease;
+	margin-top: 1rem;
+	left: 0;
+	display: none;
+}
+
+
+/* Menu: Events */
+
+header ul li:hover>ul,
+header ul li:focus-within>ul,
+header ul li ul:hover,
+header ul li ul:focus {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+}
+
+header ul li ul li {
+	clear: both;
+	width: 100%;
+}
+
+
+/* Menu: End */
+
+
+/* Tolls: Start */
+header .tools {
+    grid-column: 4/6;
+
+}
+
+header .tools input[type=text] {
+	width: 95px;
+	padding: 12px 20px;
+    margin: 20px 7px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+
+/* Tolls: End */
+
+.phone-ad img,
+.hero-feature img {
+	width: 100%;
+}
+
+footer {
+	text-align: center;
+	margin-top: 20px;
+	padding: 10px;
+	justify-self: center;
+	align-items: center;
+	line-height: 20px;
+}
+
+
+/**
+* Tablet
+*/
+
+@media only screen and (min-width: 576px) {
+
+}
+
+
+/**
+* Desktop
+*/
+@media only screen and (min-width: 992px) {
+	.hero .hero-feature,
+	.hero .emphasize {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.hero .emphasize {
+		padding-left: 50px;
+	}
+	.desktop-ad img {
+		width: 100%;
+		max-width: 380px;
+		float: right;
+	}
+}
