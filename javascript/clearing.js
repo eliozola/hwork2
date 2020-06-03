@@ -1,4 +1,5 @@
 console.log("Started clearing js");
+const innerCount
 
 function addElements() {
 
