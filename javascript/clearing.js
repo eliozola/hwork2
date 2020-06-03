@@ -1,9 +1,13 @@
 console.log("Started clearing js");
-const innerCount
+const innerCont = document.getElementById("id-inner-cont"); 
 
-function addElements() {
+function addElement() {
 
-    console.log("Adding elements");
+    console.log("Adding Single element");
+}
+function addManyElements() {
+
+    console.log("Adding Many elements");
 }
 
 function deleteElements() {
