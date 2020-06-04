@@ -16,7 +16,7 @@ function addManyElements() {
 function deleteElements() {
     console.log("Clearing elements")
 }
-
+    // listeners
 function addEventHandlers() {
     console.log("adding Handlers");
     const addBtn = document.getElementById("btn-id-add");
